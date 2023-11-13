@@ -3,7 +3,8 @@
 (function name() {
     //named iife
     console.log(`hello`);
-})();//; is imp to end execution
+})();  //; is imp to end execution
+
 ((name)=> {
     //unamed iife
     console.log(`hello ${name}`);
