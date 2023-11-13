@@ -17,3 +17,4 @@ map.set("3","c")
 for (const [i,j] of map) {
     console.log(i,":-",j);
 }
+//for of loop don't work on objects
