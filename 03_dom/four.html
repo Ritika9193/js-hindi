@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(lang){
+        const li=document.createElement('li');
+        li.innerHTML=`${lang}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    //more optimised approach
+    function optilang(lang){
+        const temp=document.createElement("li");
+        temp.appendChild(document.createTextNode(lang));
+        document.querySelector('.language').appendChild(temp)
+    }
+    optilang("cpp")
+
+    //edit
+    const temp=document.querySelector("li:nth-Child(2)");
+    //temp.innerHTML="pyhton"
+    const newtemp=document.createElement("li");
+    newtemp.innerText="java";
+    temp.replaceWith(newtemp)
+    //edit
+    const first=document.querySelector("li:nth-Child(1)");
+    first.outerHTML='<li> college </li>'
+
+    //remove
+    const rem=document.querySelector("li:last-Child");
+    rem.remove();
+
+
+</script>
+</html>
