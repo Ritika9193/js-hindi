@@ -1,0 +1,8 @@
+# object
+- collection of properties and objects
+
+# new keyword 
+-empty object create hota h jise instance bolte hain
+-constructor function call hota h new keyword k karan
+-this keyword me saare arguments inject ho jate hain
+-function k andr values mil jati hain last step me

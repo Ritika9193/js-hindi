@@ -1,0 +1,10 @@
+javascript (default)->
+            synchronous
+            single threaded
+
+
+blocking code            vs      non blocking code
+blocks the execution            does not block the execution
+of the preogram
+
+read file sync                      read file async

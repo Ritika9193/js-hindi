@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>code</h1>
+    <button id="stop">Stop</button>
+    <script>
+        const name=function(){
+            console.log("hello");
+        }
+        //setTimeout(name,2000); //setTimeout has handler which means function jiska naam nhi h
+        //setInterval(name,2000);
+
+        const changeName=function(){
+            document.querySelector('h1').innerHTML="JS series"
+        }
+        const changeMe=setTimeout(changeName,3000);
+
+         document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(changeMe);
+            console.log("stopped");
+         })
+    </script>
+</body>
+</html>

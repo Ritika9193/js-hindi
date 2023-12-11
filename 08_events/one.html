@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="image">
+            <li id="bird">bird</li>
+            <li id="cat">cat</li>
+            <li id="owl">owl</li>
+            <li id="london">london</li>
+            <li id="shark">shark</li>
+        </ul>
+    </div>
+    <script>
+        // document.getElementById('owl').onclick=function(){
+        //     alert('owl')
+        // };
+        // document.getElementById('image').addEventListener('click',function(e){
+        //     alert('ul');
+        // //},false);
+        // },true);
+        // document.getElementById('owl').addEventListener('click',function(e){
+        //    alert('owl');
+        //     e.stopPropagation();
+        //     // stopPropagation() will stop bubbling
+        // },false);
+        // document.getElementById('shark').addEventListener('click',function(e){
+        //     alert('shark');
+        // },true);
+        //{preventDefault()->to stop the defaut function 
+        //false=event bubbling->down to up
+        //true=event capturing->up to down}
+        document.querySelector('#image').addEventListener('click',function(e){
+            console.log(e.target.parentNode);
+            let removeit=e.target.parentNode
+            removeit.remove();
+            //removeit.parentNode.removeChild(removeit)
+        },false)
+
+
+    </script>
+    
+</body>
+</html>
